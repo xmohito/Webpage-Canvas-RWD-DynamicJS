@@ -53,7 +53,7 @@ p.Logo a:hover {
 }
 
 .btn::before {
-  content: url(/sources/menu_icon.png);
+  content: url(../sources/menu_icon.png);
   display: flex;
   padding: 5px 5px 0 3px;
   justify-content: center;
@@ -131,7 +131,7 @@ p.Logo a:hover {
   }
 
   input:checked::before {
-    content: url(/sources/menu_icon.png);
+    content: url(../sources/menu_icon.png);
   }
 }
 
