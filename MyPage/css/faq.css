@@ -1,0 +1,109 @@
+﻿body {
+  align-items: stretch;
+  align-content: stretch;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #1a1a1a;
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+p {
+  font-size: 17px;
+}
+
+.faq-heading {
+  border-bottom: #777;
+  padding: 20px 60px;
+  background-color: #000;
+}
+
+.faq-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 0;
+  position: absolute;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.hr-line {
+  width: 60%;
+  margin: auto;
+}
+.faq-page {
+  color: #fff;
+  cursor: pointer;
+  padding: 30px 20px;
+  width: 60%;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+  font-size: 25px;
+}
+
+.faq-body {
+  margin: auto;
+  width: 50%;
+  padding: auto;
+}
+.active,
+.faq-page:hover {
+  background-color: #353535;
+}
+.faq-body {
+  padding: 0 18px;
+  color: #fff;
+  display: none;
+  overflow: hidden;
+}
+
+.faq-page:after {
+  content: "\02795";
+  /* Unicode character for "plus" sign (+) */
+  font-size: 17px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
+
+img {
+  width: 100vw;
+}
+
+.menu {
+  background-color: #000;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.brand_name {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 50px;
+}
+
+div .brand_name:hover {
+  background-color: #777;
+}

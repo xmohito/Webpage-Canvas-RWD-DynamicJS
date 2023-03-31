@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.4s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Century Gothic";
+  font-size: 17px;
+  color: #fff;
+  line-height: 1.6;
+  background: #000;
+  overflow: hidden;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#showcase {
+  background-image: url(../sources/home_background.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  z-index: 100000;
+}
+
+#showcase h1 {
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+#showcase .button {
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  border: #fff 1px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#showcase .button:hover {
+  background: #fff;
+  color: #000;
+}
+
+@media (min-width: 1000px) {
+  #section-icons div {
+    width: 33.33%;
+  }
+}
+
+#section-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#section-icons div {
+  float: left;
+  border-radius: 5%;
+  margin-bottom: 1%;
+}
+
+/* #section-icons .box1, #section-icons .box2 {
+        background: #000;
+    } */
+
+#section-icons .button {
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  border: #fff 1px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: 0.4s;
+  background-color: none;
+}
+
+#section-icons p {
+  margin-top: 30px;
+  font-size: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#section-icons .button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+#section-icons img {
+  width: 15%;
+  height: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0 20px 0;
+}
+
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
+  display: inline-block;
+  font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
